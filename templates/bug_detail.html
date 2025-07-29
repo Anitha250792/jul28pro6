@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bug Detail</title>
+</head>
+<body>
+    <div class="container">
+        <h2>{{ bug.title }}</h2>
+        <p><strong>Description:</strong> {{ bug.description }}</p>
+        <p><strong>State:</strong> {{ bug.state }}</p>
+        <p><strong>Risk:</strong> {{ bug.regression_risk }}</p>
+        <p><strong>Repro Steps:</strong> {{ bug.repro_steps }}</p>
+        <p><strong>Browser Info:</strong> {{ bug.browser_info }}</p>
+        <p><strong>Created:</strong> {{ bug.created_at.strftime('%Y-%m-%d %H:%M') }}</p>
+        <a href="/">Back</a>
+    </div>
+</body>
+</html>
